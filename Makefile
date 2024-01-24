@@ -41,6 +41,7 @@ backend/report:
 .PHONY: backend/run
 backend/run:
 	cd backend; \
+	source .env; \
 	source env/bin/activate; \
 	python3 -m matchpredictor; \
 
